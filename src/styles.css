@@ -9,6 +9,9 @@ body{
 
 .paddle{
     position: absolute;
+    background-color: white;
+    width: 1vh;
+    height: 10vh;
 }
 
 
