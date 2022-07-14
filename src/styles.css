@@ -5,13 +5,14 @@
 :root{
     --hue: 200;
     --saturation: 50%;
-    --foreground-color: hs1(var(--hue), var(--saturation), 75%);
-    --background-color: hs1(var(--hue), var(--saturation), 20%)
+    --foreground-color: hsl(var(--hue), var(--saturation), 75%);
+    --background-color: hsl(var(--hue), var(--saturation), 20%)
 }
 
 body{
     margin:0;
     background-color: var(--background-color);
+    overflow: hidden;
 }
 
 .paddle{
@@ -39,10 +40,9 @@ body{
 .ball{
     --x: 50;
     --y: 50;
-
     position: absolute;
     background-color: var(--foreground-color);
-    left: calc(var(--x) * 1vw)
+    left: calc(var(--x) * 1vw);
     /* Make the bar in the middle of the screen */
     top: calc(var(--y) * 1vh);
     border-radius: 50%;
