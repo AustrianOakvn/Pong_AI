@@ -40,6 +40,9 @@ body{
 .ball{
     --x: 50;
     --y: 50;
+    /*The element is removed from the normal document flow and no space
+    is created for the element in the page layout. Its final position is
+    determined by the values of right, bottom, top and left */
     position: absolute;
     background-color: var(--foreground-color);
     left: calc(var(--x) * 1vw);
